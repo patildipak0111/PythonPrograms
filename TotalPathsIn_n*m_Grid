@@ -1,0 +1,8 @@
+def myPath(n,m):
+    if n == 1 or m == 1:
+        return 1
+    else:
+        return myPath(n, m-1) + myPath(n-1, m)
+
+res = myPath(2,2)
+res
